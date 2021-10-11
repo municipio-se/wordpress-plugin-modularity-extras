@@ -21,7 +21,7 @@ add_action("admin_init", function () {
       "fields" => [
         [
           "key" => "field_mod_menu_menu",
-          "label" => "Menu",
+          "label" => __("Menu", "modularity-extras"),
           "name" => "mod_menu_menu",
           "type" => "select",
           "instructions" => "",
