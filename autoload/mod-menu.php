@@ -64,3 +64,25 @@ add_action(
   10,
   1,
 );
+
+add_filter(
+  "graphql_data_is_private",
+  function (
+    $is_private,
+    $model_name,
+    $data,
+    $visibility,
+    $owner,
+    $current_user
+  ) {
+    if ($model_name == "MenuObject") {
+      $is_private = false;
+    }
+    if ($model_name == "MenuItemObject") {
+      $is_private = false;
+    }
+    return $is_private;
+  },
+  10,
+  6,
+);
