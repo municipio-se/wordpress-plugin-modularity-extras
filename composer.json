@@ -2,7 +2,7 @@
   "name": "municipio/wordpress-plugin-modularity-extras",
   "description": "Adds more Modularity modules",
   "type": "wordpress-plugin",
-  "license": "MIT",
+  "license": "AGPL-3.0-or-later",
   "authors": [
     {
       "name": "Whitespace Dev",
