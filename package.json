@@ -1,4 +1,5 @@
 {
+  "version": "0.1.3",
   "license": "AGPL",
   "devDependencies": {
     "@prettier/plugin-php": "^0.17.5",
