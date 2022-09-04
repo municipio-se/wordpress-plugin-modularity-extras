@@ -8,40 +8,38 @@ add_filter("Modularity/Modules", function ($modules) {
   return $modules;
 });
 
-add_action("admin_init", function () {
-  if (function_exists("acf_add_local_field_group")) {
-    $menus = wp_get_nav_menus();
-    $choices = [];
-    foreach ($menus as $menu) {
-      $choices[$menu->slug] = $menu->name;
-    }
-    acf_add_local_field_group([
-      "key" => "group_mod_menu",
-      "title" => __("Menu module properties", "modularity-extras"),
-      "fields" => [
-        [
-          "key" => "field_mod_menu_menu",
-          "label" => __("Menu", "modularity-extras"),
-          "name" => "mod_menu_menu",
-          "type" => "select",
-          "instructions" => "",
-          // "required" => 0,
-          "choices" => $choices,
-        ],
-      ],
-      "location" => [
-        [
-          [
-            "param" => "post_type",
-            "operator" => "==",
-            "value" => "mod-menu",
-          ],
-        ],
-      ],
-      "show_in_graphql" => true,
-      "graphql_field_name" => "modMenuOptions",
-    ]);
+add_action("acf/init", function () {
+  $menus = wp_get_nav_menus();
+  $choices = [];
+  foreach ($menus as $menu) {
+    $choices[$menu->slug] = $menu->name;
   }
+  acf_add_local_field_group([
+    "key" => "group_mod_menu",
+    "title" => __("Menu module properties", "modularity-extras"),
+    "fields" => [
+      [
+        "key" => "field_mod_menu_menu",
+        "label" => __("Menu", "modularity-extras"),
+        "name" => "mod_menu_menu",
+        "type" => "select",
+        "instructions" => "",
+        // "required" => 0,
+        "choices" => $choices,
+      ],
+    ],
+    "location" => [
+      [
+        [
+          "param" => "post_type",
+          "operator" => "==",
+          "value" => "mod-menu",
+        ],
+      ],
+    ],
+    "show_in_graphql" => true,
+    "graphql_field_name" => "modMenuOptions",
+  ]);
 });
 
 add_action(
