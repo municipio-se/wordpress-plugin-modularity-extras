@@ -2,14 +2,14 @@
 # yarn lockfile v1
 
 
-"@prettier/plugin-php@^0.16.2":
-  version "0.16.3"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.16.3.tgz#74867210079ba3c0c3ae843029d76e25ff0aadf3"
-  integrity sha512-DNidzeGpP+/wmcCAZNSHxgoAnhEosYG+no4jJRqln19e1o3Okpuir/2JMxb07VCwdG50IWjtNgVwNPVl4uj0Hg==
+"@prettier/plugin-php@^0.17.5":
+  version "0.17.6"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-php/-/plugin-php-0.17.6.tgz#49e2cb091da89d525842412d2de20fc3ca3d1a20"
+  integrity sha512-Nxkq+Gl8bGbutRV7e3/p5d+Bcftn75oH61RT8xzk44T5ET7fVP50pUdaOdvt704GSNr6wwmfBW8MhBz5IKt+fA==
   dependencies:
     linguist-languages "^7.5.1"
     mem "^8.0.0"
-    php-parser "3.0.2"
+    php-parser "https://github.com/glayzzle/php-parser#27abcb2337ac6450c068ef064982dfabf77916a5"
 
 linguist-languages@^7.5.1:
   version "7.15.0"
@@ -41,12 +41,11 @@ p-defer@^1.0.0:
   resolved "https://registry.yarnpkg.com/p-defer/-/p-defer-1.0.0.tgz#9f6eb182f6c9aa8cd743004a7d4f96b196b0fb0c"
   integrity sha1-n26xgvbJqozXQwBKfU+WsZaw+ww=
 
-php-parser@3.0.2:
+"php-parser@git+https://github.com/glayzzle/php-parser.git#27abcb2337ac6450c068ef064982dfabf77916a5":
   version "3.0.2"
-  resolved "https://registry.yarnpkg.com/php-parser/-/php-parser-3.0.2.tgz#a86dbbc110e57378cba71ab4cd9b0d18f3872ac3"
-  integrity sha512-a7y1+odEGsceLDLpu7oNyspZ0pK8FMWJOoim4/yd82AtnEZNLdCLZ67arnOQZ9K0lHJiSp4/7lVUpGELVxE14w==
+  resolved "git+https://github.com/glayzzle/php-parser.git#27abcb2337ac6450c068ef064982dfabf77916a5"
 
-prettier@^2.2.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.4.1.tgz#671e11c89c14a4cfc876ce564106c4a6726c9f5c"
-  integrity sha512-9fbDAXSBcc6Bs1mZrDYb3XKzDLm4EXXL9sC1LqKP5rZkT6KRr/rf9amVUcODVXgguK/isJz0d0hP72WeaKWsvA==
+prettier@^2.4.1:
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.7.1.tgz#e235806850d057f97bb08368a4f7d899f7760c64"
+  integrity sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==
