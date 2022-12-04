@@ -55,6 +55,8 @@ add_action(
         $menu_slug = get_field("mod_menu_menu", $module->ID, false);
         $resolver = new MenuConnectionResolver($module, $args, $context, $info);
         $resolver->set_query_arg("slug", $menu_slug);
+        // Allow menus that have not been assigned to any locations
+        $resolver->set_query_arg("include", null);
         return $resolver->one_to_one()->get_connection();
       },
     ]);
