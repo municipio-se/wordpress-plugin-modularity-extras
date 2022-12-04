@@ -1,3 +1,10 @@
+### [0.1.4](https://github.com/municipio-se/wordpress-plugin-modularity-extras/compare/v0.1.3...v0.1.4) (2022-12-04)
+
+
+### Bug Fixes
+
+* Menu was not included ([b80c33a](https://github.com/municipio-se/wordpress-plugin-modularity-extras/commit/b80c33aefae5f4b484c37496d6830b40198dab89))
+
 ### [0.1.3](https://github.com/municipio-se/wordpress-plugin-modularity-extras/compare/v0.1.2...v0.1.3) (2022-09-04)
 
 

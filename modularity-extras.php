@@ -3,7 +3,7 @@
  * Plugin Name: Modularity Extras
  * Plugin URI: -
  * Description: Adds more Modularity modules
- * Version: 0.1.3
+ * Version: 0.1.4
  * Author: Whitespace
  * Text Domain: modularity-extras
  * Author URI: https://www.whitespace.se/
